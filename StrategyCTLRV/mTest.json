@@ -1,0 +1,1400 @@
+{
+  "states": [
+    {
+      "name": "s0",
+      "labels": [],
+      "initial": false,
+      "falseLabels": []
+    },
+    {
+      "name": "s1",
+      "labels": [],
+      "initial": true,
+      "falseLabels": []
+    },
+    {
+      "name": "s2",
+      "labels": [],
+      "initial": false,
+      "falseLabels": []
+    },
+    {
+      "name": "s3",
+      "labels": [],
+      "initial": false,
+      "falseLabels": []
+    },
+    {
+      "name": "s4",
+      "labels": [],
+      "initial": false,
+      "falseLabels": []
+    },
+    {
+      "name": "s5",
+      "labels": [],
+      "initial": false,
+      "falseLabels": []
+    },
+    {
+      "name": "s6",
+      "labels": [],
+      "initial": false,
+      "falseLabels": []
+    },
+    {
+      "name": "s7",
+      "labels": [],
+      "initial": false,
+      "falseLabels": []
+    },
+    {
+      "name": "s8",
+      "labels": [],
+      "initial": false,
+      "falseLabels": []
+    },
+    {
+      "name": "s9",
+      "labels": [],
+      "initial": false,
+      "falseLabels": []
+    }
+  ],
+  "agents": [
+    {
+      "name": "a0",
+      "actions": [
+        "act0_0",
+        "act4_2",
+        "act3_4",
+        "act6_6",
+        "act1_8",
+        "act3_10",
+        "act4_12",
+        "act3_14",
+        "act3_16",
+        "act5_18",
+        "act4_20",
+        "act1_22",
+        "act1_24",
+        "act1_26",
+        "act4_28",
+        "act4_30",
+        "act2_32",
+        "act3_34",
+        "act0_36",
+        "act4_38",
+        "act4_40",
+        "act3_42",
+        "act1_44",
+        "act5_46",
+        "act5_48",
+        "act5_50",
+        "act5_52",
+        "act1_54",
+        "act3_56",
+        "act0_58",
+        "act3_60",
+        "act3_62",
+        "act4_64",
+        "act4_66",
+        "act5_68",
+        "act3_70",
+        "act5_72",
+        "act2_74",
+        "act3_76",
+        "act4_78",
+        "act6_80",
+        "act6_82",
+        "act1_84",
+        "act1_86",
+        "act4_88",
+        "act1_90",
+        "act0_92",
+        "act4_94",
+        "act3_96",
+        "act6_98",
+        "act4_100",
+        "act6_102",
+        "act1_104",
+        "act5_106",
+        "act3_108",
+        "act6_110",
+        "act6_112",
+        "act5_114",
+        "act1_116",
+        "act1_118",
+        "act2_120",
+        "act5_122",
+        "act6_124",
+        "act1_126",
+        "act5_128"
+      ],
+      "indistinguishableStates": [
+        [
+          "s0",
+          "s8"
+        ]
+      ]
+    },
+    {
+      "name": "a1",
+      "actions": [
+        "act0_1",
+        "act7_3",
+        "act1_5",
+        "act3_7",
+        "act0_9",
+        "act2_11",
+        "act5_13",
+        "act0_15",
+        "act5_17",
+        "act3_19",
+        "act5_21",
+        "act1_23",
+        "act3_25",
+        "act3_27",
+        "act6_29",
+        "act1_31",
+        "act2_33",
+        "act0_35",
+        "act0_37",
+        "act7_39",
+        "act5_41",
+        "act4_43",
+        "act2_45",
+        "act2_47",
+        "act7_49",
+        "act1_51",
+        "act1_53",
+        "act3_55",
+        "act3_57",
+        "act1_59",
+        "act0_61",
+        "act1_63",
+        "act3_65",
+        "act2_67",
+        "act6_69",
+        "act1_71",
+        "act1_73",
+        "act6_75",
+        "act0_77",
+        "act1_79",
+        "act6_81",
+        "act0_83",
+        "act6_85",
+        "act7_87",
+        "act5_89",
+        "act5_91",
+        "act1_93",
+        "act2_95",
+        "act6_97",
+        "act4_99",
+        "act7_101",
+        "act7_103",
+        "act4_105",
+        "act5_107",
+        "act6_109",
+        "act3_111",
+        "act3_113",
+        "act3_115",
+        "act2_117",
+        "act7_119",
+        "act7_121",
+        "act4_123",
+        "act4_125",
+        "act6_127",
+        "act2_129"
+      ],
+      "indistinguishableStates": [
+        [
+          "s5",
+          "s4"
+        ]
+      ]
+    }
+  ],
+  "transitions": [
+    {
+      "fromState": "s0",
+      "toState": "s7",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act0_0"
+          },
+          {
+            "agent": "a1",
+            "action": "act0_1"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s1",
+      "toState": "s6",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act4_2"
+          },
+          {
+            "agent": "a1",
+            "action": "act7_3"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s2",
+      "toState": "s1",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act3_4"
+          },
+          {
+            "agent": "a1",
+            "action": "act1_5"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s3",
+      "toState": "s7",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act6_6"
+          },
+          {
+            "agent": "a1",
+            "action": "act3_7"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s4",
+      "toState": "s1",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act1_8"
+          },
+          {
+            "agent": "a1",
+            "action": "act0_9"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s5",
+      "toState": "s1",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act3_10"
+          },
+          {
+            "agent": "a1",
+            "action": "act2_11"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s6",
+      "toState": "s6",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act4_12"
+          },
+          {
+            "agent": "a1",
+            "action": "act5_13"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s7",
+      "toState": "s9",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act3_14"
+          },
+          {
+            "agent": "a1",
+            "action": "act0_15"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s8",
+      "toState": "s2",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act3_16"
+          },
+          {
+            "agent": "a1",
+            "action": "act5_17"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s9",
+      "toState": "s2",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act5_18"
+          },
+          {
+            "agent": "a1",
+            "action": "act3_19"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s6",
+      "toState": "s2",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act4_20"
+          },
+          {
+            "agent": "a1",
+            "action": "act5_21"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s4",
+      "toState": "s6",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act1_22"
+          },
+          {
+            "agent": "a1",
+            "action": "act1_23"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s0",
+      "toState": "s4",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act1_24"
+          },
+          {
+            "agent": "a1",
+            "action": "act3_25"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s3",
+      "toState": "s5",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act1_26"
+          },
+          {
+            "agent": "a1",
+            "action": "act3_27"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s3",
+      "toState": "s2",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act4_28"
+          },
+          {
+            "agent": "a1",
+            "action": "act6_29"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s6",
+      "toState": "s8",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act4_30"
+          },
+          {
+            "agent": "a1",
+            "action": "act1_31"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s1",
+      "toState": "s3",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act2_32"
+          },
+          {
+            "agent": "a1",
+            "action": "act2_33"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s8",
+      "toState": "s6",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act3_34"
+          },
+          {
+            "agent": "a1",
+            "action": "act0_35"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s2",
+      "toState": "s0",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act0_36"
+          },
+          {
+            "agent": "a1",
+            "action": "act0_37"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s1",
+      "toState": "s2",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act4_38"
+          },
+          {
+            "agent": "a1",
+            "action": "act7_39"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s4",
+      "toState": "s7",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act4_40"
+          },
+          {
+            "agent": "a1",
+            "action": "act5_41"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s1",
+      "toState": "s6",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act3_42"
+          },
+          {
+            "agent": "a1",
+            "action": "act4_43"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s4",
+      "toState": "s5",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act1_44"
+          },
+          {
+            "agent": "a1",
+            "action": "act2_45"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s7",
+      "toState": "s9",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act5_46"
+          },
+          {
+            "agent": "a1",
+            "action": "act2_47"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s9",
+      "toState": "s8",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act5_48"
+          },
+          {
+            "agent": "a1",
+            "action": "act7_49"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s4",
+      "toState": "s9",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act5_50"
+          },
+          {
+            "agent": "a1",
+            "action": "act1_51"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s8",
+      "toState": "s9",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act5_52"
+          },
+          {
+            "agent": "a1",
+            "action": "act1_53"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s4",
+      "toState": "s2",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act1_54"
+          },
+          {
+            "agent": "a1",
+            "action": "act3_55"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s8",
+      "toState": "s9",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act3_56"
+          },
+          {
+            "agent": "a1",
+            "action": "act3_57"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s3",
+      "toState": "s8",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act0_58"
+          },
+          {
+            "agent": "a1",
+            "action": "act1_59"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s7",
+      "toState": "s8",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act3_60"
+          },
+          {
+            "agent": "a1",
+            "action": "act0_61"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s2",
+      "toState": "s7",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act3_62"
+          },
+          {
+            "agent": "a1",
+            "action": "act1_63"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s3",
+      "toState": "s2",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act4_64"
+          },
+          {
+            "agent": "a1",
+            "action": "act3_65"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s6",
+      "toState": "s8",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act4_66"
+          },
+          {
+            "agent": "a1",
+            "action": "act2_67"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s5",
+      "toState": "s7",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act5_68"
+          },
+          {
+            "agent": "a1",
+            "action": "act6_69"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s1",
+      "toState": "s0",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act3_70"
+          },
+          {
+            "agent": "a1",
+            "action": "act1_71"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s6",
+      "toState": "s5",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act5_72"
+          },
+          {
+            "agent": "a1",
+            "action": "act1_73"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s4",
+      "toState": "s2",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act2_74"
+          },
+          {
+            "agent": "a1",
+            "action": "act6_75"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s9",
+      "toState": "s8",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act3_76"
+          },
+          {
+            "agent": "a1",
+            "action": "act0_77"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s9",
+      "toState": "s4",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act4_78"
+          },
+          {
+            "agent": "a1",
+            "action": "act1_79"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s2",
+      "toState": "s3",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act6_80"
+          },
+          {
+            "agent": "a1",
+            "action": "act6_81"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s6",
+      "toState": "s3",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act6_82"
+          },
+          {
+            "agent": "a1",
+            "action": "act0_83"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s4",
+      "toState": "s1",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act1_84"
+          },
+          {
+            "agent": "a1",
+            "action": "act6_85"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s0",
+      "toState": "s4",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act1_86"
+          },
+          {
+            "agent": "a1",
+            "action": "act7_87"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s9",
+      "toState": "s8",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act4_88"
+          },
+          {
+            "agent": "a1",
+            "action": "act5_89"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s5",
+      "toState": "s4",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act1_90"
+          },
+          {
+            "agent": "a1",
+            "action": "act5_91"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s9",
+      "toState": "s7",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act0_92"
+          },
+          {
+            "agent": "a1",
+            "action": "act1_93"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s8",
+      "toState": "s7",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act4_94"
+          },
+          {
+            "agent": "a1",
+            "action": "act2_95"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s1",
+      "toState": "s2",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act3_96"
+          },
+          {
+            "agent": "a1",
+            "action": "act6_97"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s8",
+      "toState": "s6",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act6_98"
+          },
+          {
+            "agent": "a1",
+            "action": "act4_99"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s5",
+      "toState": "s0",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act4_100"
+          },
+          {
+            "agent": "a1",
+            "action": "act7_101"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s3",
+      "toState": "s9",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act6_102"
+          },
+          {
+            "agent": "a1",
+            "action": "act7_103"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s4",
+      "toState": "s5",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act1_104"
+          },
+          {
+            "agent": "a1",
+            "action": "act4_105"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s0",
+      "toState": "s6",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act5_106"
+          },
+          {
+            "agent": "a1",
+            "action": "act5_107"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s6",
+      "toState": "s0",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act3_108"
+          },
+          {
+            "agent": "a1",
+            "action": "act6_109"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s9",
+      "toState": "s2",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act6_110"
+          },
+          {
+            "agent": "a1",
+            "action": "act3_111"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s4",
+      "toState": "s4",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act6_112"
+          },
+          {
+            "agent": "a1",
+            "action": "act3_113"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s4",
+      "toState": "s3",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act5_114"
+          },
+          {
+            "agent": "a1",
+            "action": "act3_115"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s2",
+      "toState": "s9",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act1_116"
+          },
+          {
+            "agent": "a1",
+            "action": "act2_117"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s6",
+      "toState": "s3",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act1_118"
+          },
+          {
+            "agent": "a1",
+            "action": "act7_119"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s2",
+      "toState": "s9",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act2_120"
+          },
+          {
+            "agent": "a1",
+            "action": "act7_121"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s2",
+      "toState": "s8",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act5_122"
+          },
+          {
+            "agent": "a1",
+            "action": "act4_123"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s5",
+      "toState": "s9",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act6_124"
+          },
+          {
+            "agent": "a1",
+            "action": "act4_125"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s8",
+      "toState": "s5",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act1_126"
+          },
+          {
+            "agent": "a1",
+            "action": "act6_127"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    },
+    {
+      "fromState": "s8",
+      "toState": "s4",
+      "agentActions": [
+        [
+          {
+            "agent": "a0",
+            "action": "act5_128"
+          },
+          {
+            "agent": "a1",
+            "action": "act2_129"
+          }
+        ]
+      ],
+      "multipleAgentActions": [],
+      "defaultTransition": false
+    }
+  ],
+  "groups": [
+    {
+      "name": "g",
+      "agents": [
+        "a0",
+        "a1"
+      ]
+    }
+  ],
+  "formula": "<g>F(s4)"
+}

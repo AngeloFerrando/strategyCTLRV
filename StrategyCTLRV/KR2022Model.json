@@ -1,0 +1,467 @@
+{
+  "states": [
+    {
+      "name": "sI",
+      "initial" : true,
+      "labels": [
+        "sp"
+      ]
+    },
+    {
+      "name": "s1",
+      "labels": [
+        "cp"
+      ]
+    },
+    {
+      "name": "s2",
+      "labels": [
+        "cp"
+      ]
+    },
+    {
+      "name": "s3",
+      "labels": [
+        "cp"
+      ]
+    },
+    {
+      "name": "s4",
+      "labels": [
+        "rm",
+        "oc"
+      ]
+    },
+    {
+      "name": "s5",
+      "labels": [
+        "pl"
+      ]
+    },
+    {
+      "name": "s6",
+      "labels": [
+        "rp",
+        "ip"
+      ]
+    },
+    {
+      "name": "s7",
+      "labels": [
+        "rp",
+        "ip"
+      ]
+    },
+    {
+      "name": "s8",
+      "labels": [
+        "pr"
+      ]
+    },
+    {
+      "name": "e1"
+    },
+    {
+      "name": "e2"
+    }
+  ],
+  "agents": [
+    {
+      "name": "Rover",
+      "actions": [
+        "chk",
+        "i",
+        "L",
+        "R",
+        "mp"
+      ],
+      "indistinguishableStates": [
+        [
+          "s1",
+          "s2",
+          "s3"
+        ]
+      ]
+    },
+    {
+      "name": "Mechanic",
+      "actions": [
+        "ok",
+        "notok",
+        "i",
+        "ca",
+        "cw",
+        "cm"
+      ]
+    }
+  ],
+  "transitions": [
+
+    {
+      "fromState": "sI",
+      "toState": "s1",
+      "agentActions": [
+        [
+          {
+            "agent": "Rover",
+            "action": "chk"
+          },
+          {
+            "agent": "Mechanic",
+            "action": "ca"
+          }
+        ]
+      ]
+    },
+    {
+      "fromState": "sI",
+      "toState": "s2",
+      "agentActions": [
+        [
+          {
+            "agent": "Rover",
+            "action": "chk"
+          },
+          {
+            "agent": "Mechanic",
+            "action": "cw"
+          }
+        ]
+      ]
+    },
+    {
+      "fromState": "sI",
+      "toState": "s3",
+      "agentActions": [
+        [
+          {
+            "agent": "Rover",
+            "action": "chk"
+          },
+          {
+            "agent": "Mechanic",
+            "action": "cm"
+          }
+        ]
+      ]
+    },
+    {
+      "fromState": "s1",
+      "toState": "e1",
+      "agentActions": [
+        [
+          {
+            "agent": "Rover",
+            "action": "i"
+          },
+          {
+            "agent": "Mechanic",
+            "action": "notok"
+          }
+        ]
+      ]
+    },
+    {
+      "fromState": "s2",
+      "toState": "e1",
+      "agentActions": [
+        [
+          {
+            "agent": "Rover",
+            "action": "i"
+          },
+          {
+            "agent": "Mechanic",
+            "action": "notok"
+          }
+        ]
+      ]
+    },
+    {
+      "fromState": "s3",
+      "toState": "e1",
+      "agentActions": [
+        [
+          {
+            "agent": "Rover",
+            "action": "i"
+          },
+          {
+            "agent": "Mechanic",
+            "action": "notok"
+          }
+        ]
+      ]
+    },
+    {
+      "fromState": "s1",
+      "toState": "s4",
+      "agentActions": [
+        [
+          {
+            "agent": "Rover",
+            "action": "i"
+          },
+          {
+            "agent": "Mechanic",
+            "action": "ok"
+          }
+        ]
+      ]
+    },
+    {
+      "fromState": "s2",
+      "toState": "s4",
+      "agentActions": [
+        [
+          {
+            "agent": "Rover",
+            "action": "i"
+          },
+          {
+            "agent": "Mechanic",
+            "action": "ok"
+          }
+        ]
+      ]
+    },
+    {
+      "fromState": "s3",
+      "toState": "s4",
+      "agentActions": [
+        [
+          {
+            "agent": "Rover",
+            "action": "i"
+          },
+          {
+            "agent": "Mechanic",
+            "action": "ok"
+          }
+        ]
+      ]
+    },
+    {
+      "fromState": "s4",
+      "toState": "s4",
+      "agentActions": [
+        [
+          {
+            "agent": "Rover",
+            "action": "i"
+          },
+          {
+            "agent": "Mechanic",
+            "action": "i"
+          }
+        ]
+      ]
+    },
+    {
+      "fromState": "s4",
+      "toState": "s6",
+      "agentActions": [
+        [
+          {
+            "agent": "Rover",
+            "action": "L"
+          },
+          {
+            "agent": "Mechanic",
+            "action": "i"
+          }
+        ]
+      ]
+    },
+    {
+      "fromState": "s4",
+      "toState": "s7",
+      "agentActions": [
+        [
+          {
+            "agent": "Rover",
+            "action": "R"
+          },
+          {
+            "agent": "Mechanic",
+            "action": "i"
+          }
+        ]
+      ]
+    },
+    {
+      "fromState": "s6",
+      "toState": "s4",
+      "agentActions": [
+        [
+          {
+            "agent": "Rover",
+            "action": "R"
+          },
+          {
+            "agent": "Mechanic",
+            "action": "i"
+          }
+        ]
+      ]
+    },
+    {
+      "fromState": "s7",
+      "toState": "s4",
+      "agentActions": [
+        [
+          {
+            "agent": "Rover",
+            "action": "L"
+          },
+          {
+            "agent": "Mechanic",
+            "action": "i"
+          }
+        ]
+      ]
+    },
+    {
+      "fromState": "s6",
+      "toState": "s5",
+      "agentActions": [
+        [
+          {
+            "agent": "Rover",
+            "action": "mp"
+          },
+          {
+            "agent": "Mechanic",
+            "action": "i"
+          }
+        ]
+      ]
+    },
+    {
+      "fromState": "s5",
+      "toState": "s6",
+      "agentActions": [
+        [
+          {
+            "agent": "Rover",
+            "action": "i"
+          },
+          {
+            "agent": "Mechanic",
+            "action": "i"
+          }
+        ]
+      ]
+    },
+    {
+      "fromState": "s7",
+      "toState": "s8",
+      "agentActions": [
+        [
+          {
+            "agent": "Rover",
+            "action": "mp"
+          },
+          {
+            "agent": "Mechanic",
+            "action": "i"
+          }
+        ]
+      ]
+    },
+    {
+      "fromState": "s8",
+      "toState": "s7",
+      "agentActions": [
+        [
+          {
+            "agent": "Rover",
+            "action": "i"
+          },
+          {
+            "agent": "Mechanic",
+            "action": "i"
+          }
+        ]
+      ]
+    },
+    {
+      "fromState": "s6",
+      "toState": "e2",
+      "agentActions": [
+        [
+          {
+            "agent": "Rover",
+            "action": "L"
+          },
+          {
+            "agent": "Mechanic",
+            "action": "i"
+          }
+        ]
+      ]
+    },
+    {
+      "fromState": "s7",
+      "toState": "e2",
+      "agentActions": [
+        [
+          {
+            "agent": "Rover",
+            "action": "R"
+          },
+          {
+            "agent": "Mechanic",
+            "action": "i"
+          }
+        ]
+      ]
+    },
+    {
+      "fromState": "e1",
+      "toState": "e1",
+      "defaultTransition": true,
+      "multipleAgentActions" : [
+        {
+          "agent": "Rover",
+          "actions" : ["chk", "i", "L", "R", "mp"]
+        },
+        {
+          "agent": "Mechanic",
+          "actions" : ["ok", "notok", "i", "ca", "cm", "cw"]
+        }
+      ]
+    },
+    {
+      "fromState": "e2",
+      "toState": "e2",
+      "defaultTransition": true,
+      "multipleAgentActions" : [
+        {
+          "agent": "Rover",
+          "actions" : ["chk", "i", "L", "R", "mp"]
+        },
+        {
+          "agent": "Mechanic",
+          "actions" : ["ok", "notok", "i", "ca", "cm", "cw"]
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "name": "g1",
+      "agents": [
+        "Rover",
+        "Mechanic"
+      ]
+    },
+    {
+      "name": "g2",
+      "agents": [
+        "Rover"
+      ]
+    }
+  ],
+  "formula" : "<g1>F((rp and not(ip)) and <g2>F((pl or pr) and <g2>F(rm and oc)))"
+}

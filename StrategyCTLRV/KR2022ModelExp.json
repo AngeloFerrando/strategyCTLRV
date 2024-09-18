@@ -1,0 +1,272 @@
+{
+  "states": [
+    {
+      "name": "sI",
+      "initial" : true,
+      "labels": [
+        "sp"
+      ]
+    },
+    {
+      "name": "s1",
+      "labels": [
+        "cp"
+      ]
+    },
+    {
+      "name": "s2",
+      "labels": [
+        "cp"
+      ]
+    },
+    {
+      "name": "s4",
+      "labels": [
+        "rm",
+        "oc",
+        "pl"
+      ]
+    },
+    {
+      "name": "e1"
+    }
+  ],
+  "agents": [
+    {
+      "name": "Rover",
+      "actions": [
+        "chk",
+        "i",
+        "L",
+        "R",
+        "mp"
+      ],
+      "indistinguishableStates": [
+        [
+          "s1",
+          "s2"
+        ]
+      ]
+    },
+    {
+      "name": "Mechanic",
+      "actions": [
+        "ok",
+        "notok",
+        "i",
+        "ca",
+        "cw",
+        "cm"
+      ]
+    }
+  ],
+  "transitions": [
+    {
+      "fromState": "sI",
+      "toState": "sI",
+      "agentActions": [
+        [
+          {
+            "agent": "Rover",
+            "action": "i"
+          },
+          {
+            "agent": "Mechanic",
+            "action": "i"
+          }
+        ]
+      ]
+    },
+    {
+      "fromState": "sI",
+      "toState": "sI",
+      "agentActions": [
+        [
+          {
+            "agent": "Rover",
+            "action": "chk"
+          },
+          {
+            "agent": "Mechanic",
+            "action": "i"
+          }
+        ]
+      ]
+    },
+    {
+      "fromState": "sI",
+      "toState": "sI",
+      "agentActions": [
+        [
+          {
+            "agent": "Rover",
+            "action": "i"
+          },
+          {
+            "agent": "Mechanic",
+            "action": "ca"
+          }
+        ]
+      ]
+    },
+    {
+      "fromState": "sI",
+      "toState": "sI",
+      "agentActions": [
+        [
+          {
+            "agent": "Rover",
+            "action": "i"
+          },
+          {
+            "agent": "Mechanic",
+            "action": "cw"
+          }
+        ]
+      ]
+    },
+    {
+      "fromState": "sI",
+      "toState": "s1",
+      "agentActions": [
+        [
+          {
+            "agent": "Rover",
+            "action": "chk"
+          },
+          {
+            "agent": "Mechanic",
+            "action": "ca"
+          }
+        ]
+      ]
+    },
+    {
+      "fromState": "sI",
+      "toState": "s2",
+      "agentActions": [
+        [
+          {
+            "agent": "Rover",
+            "action": "chk"
+          },
+          {
+            "agent": "Mechanic",
+            "action": "cw"
+          }
+        ]
+      ]
+    },
+    {
+      "fromState": "s1",
+      "toState": "e1",
+      "agentActions": [
+        [
+          {
+            "agent": "Rover",
+            "action": "i"
+          },
+          {
+            "agent": "Mechanic",
+            "action": "notok"
+          }
+        ]
+      ]
+    },
+    {
+      "fromState": "s2",
+      "toState": "e1",
+      "agentActions": [
+        [
+          {
+            "agent": "Rover",
+            "action": "i"
+          },
+          {
+            "agent": "Mechanic",
+            "action": "notok"
+          }
+        ]
+      ]
+    },
+    {
+      "fromState": "s1",
+      "toState": "s4",
+      "agentActions": [
+        [
+          {
+            "agent": "Rover",
+            "action": "i"
+          },
+          {
+            "agent": "Mechanic",
+            "action": "ok"
+          }
+        ]
+      ]
+    },
+    {
+      "fromState": "s2",
+      "toState": "s4",
+      "agentActions": [
+        [
+          {
+            "agent": "Rover",
+            "action": "i"
+          },
+          {
+            "agent": "Mechanic",
+            "action": "ok"
+          }
+        ]
+      ]
+    },
+    {
+      "fromState": "s4",
+      "toState": "s4",
+      "agentActions": [
+        [
+          {
+            "agent": "Rover",
+            "action": "i"
+          },
+          {
+            "agent": "Mechanic",
+            "action": "i"
+          }
+        ]
+      ]
+    },
+    {
+      "fromState": "e1",
+      "toState": "e1",
+      "defaultTransition": true,
+      "multipleAgentActions" : [
+        {
+          "agent": "Rover",
+          "actions" : ["chk", "i", "L", "R", "mp"]
+        },
+        {
+          "agent": "Mechanic",
+          "actions" : ["ok", "notok", "i", "ca", "cm", "cw"]
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "name": "g1",
+      "agents": [
+        "Rover",
+        "Mechanic"
+      ]
+    },
+    {
+      "name": "g2",
+      "agents": [
+        "Rover"
+      ]
+    }
+  ],
+  "formula" : "<g1>F(rm and <g2>F(pl))"
+}
